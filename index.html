@@ -2,23 +2,35 @@
 <html>
 	<head>
 		<title>Home Page</title>
-		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+		<link rel="stylesheet" href="./css/main.css">
 	</head>
+
 	<body>
-		<h1>Notes App</h1>
-		<h2>Take notes and never forget</h2>
-		<input id="search-text" type="text" placeholder="Filter notes">
+		<main class="app">
+			<div class="app-wrapper">
+				<div class="app-container app-container_top">
+					<h1 class="app-subtitle">Notes App</h1>
+	
+					<select class="app-filter" id="filter-by">
+						<option class="app-option" value="byEdited">Sort by last edited</option>
+						<option class="app-option" value="byCreated">Sort by recently created</option>
+						<option class="app-option" value="alphabetical">Sort alphabetically</option>
+					</select>
+	
+				</div>	
+				
+				<div class="app-container">
+					<h2 class="app-subtitle" >Take notes and never forget</h2>
+					<input class="app-input" id="search-text" type="text" placeholder="Filter notes">
 			
-		<select id="filter-by">
-			<option value="byEdited">Sort by last edited</option>
-			<option value="byCreated">Sort by recently created</option>
-			<option value="alphabetical">Sort alphabetically</option>
-		</select>
+					<div class="app-notes" id="notes"></div>
+					<button class="app-button" id="create-note">Create Note</button>
+				</div>
+			</div>
+		</main>
 
-		<div id="notes"></div>
-		<button id="create-note">Create Note</button>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-
 		<script src="./notes-functions.js"></script>
 		<script src="./notes-app.js" ></script>
 	</body>

@@ -28,6 +28,7 @@ const removeNote = function(id) {
 // Generate the DOM structure for a note
 const generateNoteDOM = function (note) {
     const noteEl = document.createElement('div')
+    noteEl.classList.add("app-note___item")
     const textEl = document.createElement('a')
     const button = document.createElement('button')
     button.addEventListener('click', function() {
