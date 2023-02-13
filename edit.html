@@ -8,15 +8,18 @@
 <body>
 	<div class="app">
 		<header class="app-header">
-			<a href="/index.html">Home</a>
+			<a class="app-header__link" href="/index.html">Back</a>
 		</header>
 
 		<main class="app-content">
-			<input id="note-title" placeholder="Note title">
-			<span id="last-edited"></span>
-			<textarea id="note-body" placeholder="Enter note text"></textarea>
-			<button id="remove-note">Remove note</button>
+			<div class="app-container">
+				<input id="note-title" placeholder="Note title">
+				<span id="last-edited"></span>
+				<textarea id="note-body" placeholder="Enter note text"></textarea>
+				<button class="app-content__button-remove" id="remove-note"></button>
+			</div>
 		</main>
+
 	</div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>

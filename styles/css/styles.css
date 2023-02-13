@@ -2,6 +2,8 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -13,6 +15,96 @@ html {
   background-color: #4A3AFF;
   padding: 4.563em 0;
   text-align: center;
+  color: #fff;
+}
+.app-header__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+.app-content {
+  padding: 30px;
+  margin: 97px auto;
+  max-width: 640px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.app-content__title {
+  text-align: center;
+}
+.app-content__search {
+  width: 100%;
+}
+.app-content__notes-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6px 0;
+}
+.app-content__notes-item__name {
+  width: 100%;
+  max-width: 352px;
+  word-break: break-all;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1E252B;
+  line-height: 26px;
+}
+.app-content__notes-item__button-remove {
+  width: 32px;
+  height: 32px;
+  background: url("/assets/ic_delete.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  stroke: #4A3AFF;
+  fill: #4A3AFF;
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center center;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 4px 10px 0px;
+}
+.app-content__notes-item__button-remove svg {
+  width: 1em;
+  height: 1em;
+}
+.app-content__button-create {
+  width: 100%;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  background-color: #4A3AFF;
+  padding: 8px;
+  cursor: pointer;
+}
+.app-content__button-remove {
+  width: 32px;
+  height: 32px;
+  background: url("/assets/ic_delete.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  stroke: #4A3AFF;
+  fill: #4A3AFF;
+  border-radius: 50%;
+  background-color: #fff;
+  background-position: center center;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 4px 10px 0px;
+}
+.app-content__button-remove svg {
+  width: 1em;
+  height: 1em;
+}
+.app-content__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 /*# sourceMappingURL=styles.css.map */

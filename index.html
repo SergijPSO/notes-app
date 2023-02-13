@@ -10,20 +10,21 @@
 
 		<div class="app">
 			<header class="app-header">
-				<h1 class="app-subtitle">Notes App</h1>
-				<select class="app-filter" id="filter-by">
-					<option class="app-option" value="byEdited">Sort by last edited</option>
-					<option class="app-option" value="byCreated">Sort by recently created</option>
-					<option class="app-option" value="alphabetical">Sort alphabetically</option>
+				<h1 class="app-header__title">Notes App</h1>
+				<select class="app-header__select" id="filter-by">
+					<option class="app-header__option" value="byEdited">Sort by last edited</option>
+					<option class="app-header__option" value="byCreated">Sort by recently created</option>
+					<option class="app-header__option" value="alphabetical">Sort alphabetically</option>
 				</select>
 			</header>
 
-			<main class="app-main">
-				<h2 class="app-subtitle" >Take notes and never forget</h2>
-				<input class="app-input" id="search-text" type="text" placeholder="Filter notes">
-		
-				<div class="app-notes" id="notes"></div>
-				<button class="app-button" id="create-note">Create Note</button>
+			<main class="app-content">
+				<div class="app-content__wrapper">
+					<h2 class="app-content__title" >Take notes and never forget</h2>
+					<input class="app-content__search" id="search-text" type="text" placeholder="Filter notes">
+					<div class="app-content__notes" id="notes"></div>
+					<button class="app-content__button-create" id="create-note">+ Create Note</button>
+				</div>
 			</main>
 		</div>
 
