@@ -8,15 +8,32 @@
 <body>
 	<div class="app">
 		<header class="app-header">
-			<a class="app-header__link" href="/index.html">Back</a>
+			<h1 class="app-header__title">Notes App</h1>
+			<button class="app-header__button">
+				<a class="app-header__link" href="/index.html">
+					<img src="./assets/arrow-left.svg" alt="arrow back" class="app-header__icon">
+					Back
+				</a>
+			</button>
 		</header>
 
 		<main class="app-content">
-			<div class="app-container">
-				<input id="note-title" placeholder="Note title">
-				<span id="last-edited"></span>
-				<textarea id="note-body" placeholder="Enter note text"></textarea>
-				<button class="app-content__button-remove" id="remove-note"></button>
+			<div class="app-content__wrapper app-content__wrapper--edit">
+				<h2 class="app-content__title">Note</h2>
+				<div class="app-content__note">
+
+					<label for="note-title" class="app-content__note-label">Name</label>
+					<input class="app-content__note-name" id="note-title" placeholder="Note title">
+
+					<label for="note-body" class="app-content__note-label">Description</label>
+					<textarea class="app-content__note-body"id="note-body" placeholder="Enter note text"></textarea>
+
+					<span class="app-content__status">
+						<span class="app-content__status-text" id="last-edited"></span>
+						<button class="app-content__button-remove" id="remove-note"></button>
+					</span>
+
+				</div>
 			</div>
 		</main>
 

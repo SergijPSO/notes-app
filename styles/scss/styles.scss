@@ -1,11 +1,12 @@
 // Font import
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
-//variables
+//Variables
 $app-purple: #4A3AFF;
 $app-white: #fff;
 $app-dark: #1E252B;
 $app-grey: #747579;
+$app-lime: #C2FF13;
 
 //Common normalizer
 * {
@@ -22,14 +23,53 @@ html {
 
 .app {
   &-header {
+    position: relative;
     background-color: $app-purple;
     padding: 4.563em 0;
     text-align: center;
     color: $app-white;
-      &__title {
+
+    &__title {
       font-weight: 700;
       font-size: 50px;
       line-height: 50px;
+    }
+
+    &__select {
+      background: url('/assets/arrow-down.png') no-repeat;
+      background-position: calc(100% - 14px);
+      padding: 13px 16px;
+      margin-top: 28px;
+      max-width: 402px; 
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      border-radius: 12px;
+      appearance: none;
+      border: 1px solid $app-white;
+      color: $app-grey;
+      color: $app-white;
+      background-color: none;
+    }
+
+    &__button {
+      position: absolute;
+      top: 37%;
+      left: 10%;
+      outline: none;
+      border: none;
+      background: none;
+      outline: none;
+      border: none;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 700;
+      color: $app-lime;
+      cursor: pointer;
     }
   }
 
@@ -41,17 +81,97 @@ html {
     background-color: $app-white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+    &__note {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+      &-label {
+        color: $app-grey;
+        margin-bottom: 4px;
+      }
+
+      &-name,
+      &-body {
+        padding: 10px 16px;
+        max-width: 368px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+        color: $app-grey;
+        border: 1px solid $app-grey;
+        border-radius: 12px;
+        outline: none;
+        margin-bottom: 26px;
+      }
+
+      &-body {
+        min-height: 100px;
+        resize: none;
+
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+    
+        &::-webkit-scrollbar-thumb {
+          background: $app-purple; 
+          border-radius: .625em;
+        }
+    
+        &::-webkit-scrollbar-thumb:hover {
+          cursor: pointer;
+        }
+      }
+      
+    }
+
     &__title {
       text-align: center;
     }
+
     &__search {
-      width: 100%
+      padding: 10px 16px;
+      max-width: 368px;
+      width: 100%;
+      font-size: 14px;
+      line-height: 24px;
+      color: $app-grey;
+      border: 1px solid $app-grey;
+      border-radius: 12px;
+      outline: none;
+
+      &-label {
+        display: inline-block;
+        margin: 28px 0 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+        color: $app-grey;
+      }
     }
     
     &__notes {
+      margin: 28px 0;
+      max-height: 326px;
+      overflow-x: scroll;
+
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: $app-purple; 
+        border-radius: .625em;
+      }
+  
+      &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+      }
+
       &-item {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin: 6px 0;
 
@@ -70,7 +190,7 @@ html {
             width: 32px;
             height: 32px;
             background: url('/assets/ic_delete.svg');
-            background-size: 20px;
+            background-size: 16px;
             background-repeat: no-repeat;
             cursor: pointer;
             border: none;
@@ -79,13 +199,23 @@ html {
             border-radius: 50%;
             background-color: $app-white;
             background-position: center center;
-            box-shadow: rgba(100, 100, 111, 0.4) 0px 4px 10px 0px;
+            box-shadow: rgb(100 100 111 / 20%) 0px 2px 6px 0px;
             svg {
               width: 1em;
               height: 1em;
             }
           }
         }
+      }
+    }
+
+    &__status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-text {
+        color: $app-dark;
+        opacity: .5;
       }
     }
 
@@ -117,17 +247,25 @@ html {
         background-color: $app-white;
         background-position: center center;
         box-shadow: rgba(100, 100, 111, 0.4) 0px 4px 10px 0px;
+
         svg {
           width: 1em;
           height: 1em;
         }
+
       }
     }
 
     &__wrapper {
       width: 100%;
       margin: 0 auto;
-      max-width: 400px;
+      max-width: 402px;
+      box-sizing: border-box;
+
+      &--edit {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
