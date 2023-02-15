@@ -26,7 +26,7 @@ html {
 .app-header__select {
   background: url("/assets/arrow-down.png") no-repeat;
   background-position: calc(100% - 14px);
-  padding: 13px 16px;
+  padding: 10px 16px;
   margin-top: 28px;
   max-width: 402px;
   width: 100%;
@@ -221,6 +221,9 @@ html {
 .app-content__wrapper--edit {
   display: flex;
   flex-direction: column;
+}
+.app-content__wrapper--edit .app-content__title {
+  margin-bottom: 28px;
 }
 
 /*# sourceMappingURL=styles.css.map */
