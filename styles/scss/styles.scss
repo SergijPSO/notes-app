@@ -17,7 +17,7 @@ $app-lime: #C2FF13;
 }
 
 html {
-  background-image: url('/assets/texture.png');
+  background-image: url('/notes-app/assets/texture.png');
   background-size: cover;
 }
 
@@ -36,7 +36,7 @@ html {
     }
 
     &__select {
-      background: url('/assets/arrow-down.png') no-repeat;
+      background: url('/notes-app/assets/arrow-down.png') no-repeat;
       background-position: calc(100% - 14px);
       padding: 10px 16px;
       margin-top: 28px;
@@ -189,7 +189,7 @@ html {
           &-remove {
             width: 32px;
             height: 32px;
-            background: url('/assets/ic_delete.svg');
+            background: url('/notes-app/assets/ic_delete.svg');
             background-size: 16px;
             background-repeat: no-repeat;
             cursor: pointer;
@@ -236,7 +236,7 @@ html {
       &-remove {
         width: 32px;
         height: 32px;
-        background: url('/assets/ic_delete.svg');
+        background: url('/notes-app/assets/ic_delete.svg');
         background-size: 20px;
         background-repeat: no-repeat;
         cursor: pointer;
