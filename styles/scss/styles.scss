@@ -31,22 +31,31 @@ html {
 
     &__title {
       font-weight: 700;
-      font-size: 50px;
-      line-height: 50px;
+      font-size: 3.125rem;
+      line-height: 3.125rem;
+    }
+
+    &__text {
+      display: inline-block;
+      margin-top: 1.75rem;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 2.875rem;
+      color: $app-lime;
     }
 
     &__select {
       background: url('/notes-app/assets/arrow-down.png') no-repeat;
       background-position: calc(100% - 14px);
-      padding: 10px 16px;
-      margin-top: 28px;
-      max-width: 402px; 
+      padding: .625rem 1rem;
+      margin-top: 1.75rem;
+      max-width: 25.125rem;
       width: 100%;
-      font-size: 14px;
-      line-height: 24px;
-      border-radius: 12px;
+      font-size: .875rem;
+      line-height: 1.5rem;
+      border-radius: .75rem;
       appearance: none;
-      border: 1px solid $app-white;
+      border: .063rem solid $app-white;
       color: $app-grey;
       color: $app-white;
       background-color: none;
@@ -66,7 +75,7 @@ html {
     &__link {
       display: flex;
       align-items: center;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 700;
       color: $app-lime;
       cursor: pointer;
@@ -74,55 +83,55 @@ html {
   }
 
   &-content {
-    padding: 30px;
-    margin: 97px auto;
-    max-width: 640px;
-    border-radius: 10px;
+    padding: 1.875rem;
+    margin: 6.063rem auto;
+    max-width: 40rem;
+    border-radius: .625rem;
     background-color: $app-white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 .438rem 1.813rem 0;
 
     &__note {
       display: flex;
       flex-direction: column;
       text-align: center;
-      
+
       &-label {
         color: $app-grey;
-        margin-bottom: 4px;
+        margin-bottom: .25rem;
       }
 
       &-name,
       &-body {
-        padding: 10px 16px;
-        max-width: 368px;
+        padding: .625rem 1rem;
+        max-width: 23rem;
         width: 100%;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: .875rem;
+        line-height: 1.5rem;
         color: $app-grey;
-        border: 1px solid $app-grey;
-        border-radius: 12px;
+        border: .063rem solid $app-grey;
+        border-radius: .75rem;
         outline: none;
-        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
       }
 
       &-body {
-        min-height: 100px;
+        min-height: 6.25rem;
         resize: none;
 
         &::-webkit-scrollbar {
-          width: 3px;
+          width: .188rem;
         }
-    
+
         &::-webkit-scrollbar-thumb {
-          background: $app-purple; 
+          background: $app-purple;
           border-radius: .625em;
         }
-    
+
         &::-webkit-scrollbar-thumb:hover {
           cursor: pointer;
         }
       }
-      
+
     }
 
     &__title {
@@ -130,41 +139,41 @@ html {
     }
 
     &__search {
-      padding: 10px 16px;
-      max-width: 368px;
+      padding: .625rem 1rem;
+      max-width: 23rem;
       width: 100%;
-      font-size: 14px;
+      font-size: .875rem;
       line-height: 24px;
       color: $app-grey;
-      border: 1px solid $app-grey;
-      border-radius: 12px;
+      border: .063rem solid $app-grey;
+      border-radius: .75rem;
       outline: none;
 
       &-label {
         display: inline-block;
-        margin: 28px 0 0;
+        margin: 1.75rem 0 0;
         width: 100%;
         text-align: center;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: .875rem;
+        line-height: 1.5rem;
         color: $app-grey;
       }
     }
-    
+
     &__notes {
-      margin: 28px 0;
-      max-height: 326px;
+      margin: 1.75rem 0;
+      max-height: 20.375rem;
       overflow-x: scroll;
 
       &::-webkit-scrollbar {
-        width: 3px;
+        width: .188rem;
       }
-  
+
       &::-webkit-scrollbar-thumb {
-        background: $app-purple; 
+        background: $app-purple;
         border-radius: .625em;
       }
-  
+
       &::-webkit-scrollbar-thumb:hover {
         cursor: pointer;
       }
@@ -173,24 +182,24 @@ html {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 6px 0;
+        margin: .375rem 0;
 
         &__name {
           width: 100%;
-          max-width: 352px;
+          max-width: 22rem;
           word-break: break-all;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 500;
-          color:#1E252B;
-          line-height: 26px;
+          color: #1E252B;
+          line-height: 1.625rem;
         }
 
         &__button {
           &-remove {
-            width: 32px;
-            height: 32px;
+            width: 2rem;
+            height: 2rem;
             background: url('/notes-app/assets/ic_delete.svg');
-            background-size: 16px;
+            background-size: 1rem;
             background-repeat: no-repeat;
             cursor: pointer;
             border: none;
@@ -199,10 +208,11 @@ html {
             border-radius: 50%;
             background-color: $app-white;
             background-position: center center;
-            box-shadow: rgb(100 100 111 / 20%) 0px 2px 6px 0px;
+            box-shadow: rgb(100 100 111 / 20%) 0 .125rem .375rem 0;
+
             svg {
-              width: 1em;
-              height: 1em;
+              width: 1rem;
+              height: 1rem;
             }
           }
         }
@@ -213,6 +223,7 @@ html {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       &-text {
         color: $app-dark;
         opacity: .5;
@@ -222,11 +233,11 @@ html {
     &__button {
       &-create {
         width: 100%;
-        font-size: 14px;
-        line-height: 26px;
+        font-size: .875rem;
+        line-height: 1.625rem;
         font-weight: 600;
         color: $app-white;
-        border-radius: 30px;
+        border-radius: 1.875rem;
         border: none;
         background-color: #4A3AFF;
         padding: 8px;
@@ -234,10 +245,10 @@ html {
       }
 
       &-remove {
-        width: 32px;
-        height: 32px;
+        width: 2rem;
+        height: 2rem;
         background: url('/notes-app/assets/ic_delete.svg');
-        background-size: 20px;
+        background-size: 1.25rem;
         background-repeat: no-repeat;
         cursor: pointer;
         border: none;
@@ -246,7 +257,7 @@ html {
         border-radius: 50%;
         background-color: $app-white;
         background-position: center center;
-        box-shadow: rgba(100, 100, 111, 0.4) 0px 4px 10px 0px;
+        box-shadow: rgba(100, 100, 111, 0.4) 0 .25rem .625rem 0;
 
         svg {
           width: 1em;
@@ -259,15 +270,15 @@ html {
     &__wrapper {
       width: 100%;
       margin: 0 auto;
-      max-width: 402px;
+      max-width: 25.125rem;
       box-sizing: border-box;
-      
+
       &--edit {
         display: flex;
         flex-direction: column;
 
         .app-content__title {
-          margin-bottom: 28px;
+          margin-bottom: 1.75rem;
         }
       }
     }
