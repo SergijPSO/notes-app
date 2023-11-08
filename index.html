@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Notes app</title>
-		<link rel="shortcut icon" type="image/jpg" href="/notes-app/assets/ic_delete.svg"/>
-		<link rel="stylesheet" href="./styles/css/styles.css">
-	</head>
 
-	<body>
+<head>
+	<title>Notes app</title>
+	<link rel="shortcut icon" type="image/jpg" href="/notes-app/assets/ic_delete.svg" />
+	<link rel="stylesheet" href="./styles/css/styles.css">
+</head>
 
-		<div class="app">
-			<header class="app-header">
-				<h1 class="app-header__title">Notes App</h1>
-				<select class="app-header__select" id="filter-by">
-					<option class="app-header__option" value="byEdited">Sort by last edited</option>
-					<option class="app-header__option" value="byCreated">Sort by recently created</option>
-					<option class="app-header__option" value="alphabetical">Sort alphabetically</option>
-				</select>
-			</header>
+<body>
+	<div class="app">
+		<header class="app-header">
+			<h1 class="app-header__title">Notes App</h1>
+			<select class="app-header__select" id="filter-by">
+				<option class="app-header__option" value="byEdited">Sort by last edited</option>
+				<option class="app-header__option" value="byCreated">Sort by recently created</option>
+				<option class="app-header__option" value="alphabetical">Sort alphabetically</option>
+			</select>
+		</header>
 
-			<main class="app-content">
-				<div class="app-content__wrapper">
-					<h2 class="app-content__title" >Take notes and never forget</h2>
-					<label for="search-text" class="app-content__search-label">Search</label>
-					<input class="app-content__search" id="search-text" type="text" placeholder="Type here what are you looking for">
-					<div class="app-content__notes" id="notes"></div>
-					<button class="app-content__button-create" id="create-note">+ Create Note</button>
-				</div>
-			</main>
-		</div>
+		<main class="app-content">
+			<div class="app-content__wrapper">
+				<h2 class="app-content__title">Take notes and never forget</h2>
+				<label for="search-text" class="app-content__search-label">Search</label>
+				<input class="app-content__search" id="search-text" type="text"
+					placeholder="Type here what are you looking for">
+				<div class="app-content__notes" id="notes"></div>
+				<button class="app-content__button-create" id="create-note">+ Create Note</button>
+			</div>
+		</main>
+	</div>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
-		<script src="./notes-functions.js"></script>
-		<script src="./notes-app.js" ></script>
-	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+	<script src="./notes-functions.js"></script>
+	<script src="./notes-app.js"></script>
+</body>
+
 </html>
